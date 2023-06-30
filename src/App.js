@@ -1,25 +1,60 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import NavBar from './componets/NavBar'
+import Links from './componets/Links'
+import Work from './componets/work';
+import SideLinks from './componets/SideLinks';
+import styles from "./App.css"
+import Why from './componets/why';
+import Name from './componets/name';
+import Namecom from './componets/Namecom';
+import PictureName from './componets/PictureName';
+const img1 = './img1.jpg';
+const caption = 'Amukelani';
 
-function App() {
+
+const images = [
+  './img1.jpg',
+  //'./logo192.png',
+  //'./logo512.png',
+
+];
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container-app">
+      <div class="container-header">
+        <Name className="name" />
+        <NavBar />
+        <Links />
+      </div>
+
+      <div class="body-container">
+        <SideLinks />
+      </div>
+      <Namecom />
+      <h1 class="name-head" className={styles.title}>Amukelani</h1>
+      <PictureName img1={img1} caption={caption} />
+
+      <div>
+        <Why />
+
+        <Work images={images} />
+        
+      </div>
+
     </div>
-  );
+
+
+
+
+
+
+
+
+  )
 }
 
-export default App;
+export default App
