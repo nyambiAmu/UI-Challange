@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PictureName = ({ img1, caption }) => {
+const PictureName = ({ img, caption }) => {
     return (
         <div className="photo-display">
-            <img src={img1} alt={""} />
+            <img src={img} alt={""} />
             <p>{caption}</p>
         </div>
     );

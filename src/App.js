@@ -10,12 +10,12 @@ import Why from './componets/why';
 import Name from './componets/name';
 import Namecom from './componets/Namecom';
 import PictureName from './componets/PictureName';
-const img1 = './img1.jpg';
+const img = './img1.jpg';
 const caption = 'Amukelani';
 
 
 const images = [
-  './img1.jpg',
+  './img.jpg',
   //'./logo192.png',
   //'./logo512.png',
 
@@ -36,7 +36,7 @@ const App = () => {
       </div>
       <Namecom />
       <h1 class="name-head" className={styles.title}>Amukelani</h1>
-      <PictureName img1={img1} caption={caption} />
+      <PictureName img={img} caption={caption} />
 
       <div>
         <Why />
